@@ -1,0 +1,28 @@
+#about-grid {
+    display: flex;
+    justify-content: space-around;
+}
+
+#about-grid:last-child(div){
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.booking-text-about {
+    width: 50%;
+    margin: 0px;
+    padding: 30px;
+}
+
+
+
+.card-m {
+    padding: 20px;
+    display: flex;
+    max-width: 500px;
+}
+
+.card-info {
+    padding: 0px 30px;
+}
