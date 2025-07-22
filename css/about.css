@@ -10,7 +10,6 @@
 }
 
 .booking-text-about {
-    width: 50%;
     margin: 0px;
     padding: 30px;
 }
@@ -19,10 +18,53 @@
 
 .card-m {
     padding: 20px;
+    margin: 0px 10px;
+}
+
+.about-card{
+    width: 100%;
     display: flex;
-    max-width: 500px;
+    justify-content: space-between;
+    justify-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .card-info {
     padding: 0px 30px;
 }
+
+.custom-shape {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    bottom: 50px;
+    left: -50px;
+    background-color:#3d65ff ;
+    z-index: 5;
+}
+
+@media (max-width : 768px){
+    #about-grid {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .booking-text-about {
+        width: 100%;
+        margin: 0px;
+        padding: 20px;
+    }
+
+    .about-card{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-m{
+        margin: 0px 0px 20px;
+    }
+} 
+    

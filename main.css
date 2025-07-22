@@ -64,7 +64,7 @@
     
     /* Shadows */
     --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0px 0px 10px -1px rgba(0, 0, 0, 0.3);
     --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
     --shadow-xl: 1 20px 25px -5px rgba(0, 0, 0, 0.1);
     --shadow-blue: 0 10px 30px rgba(88, 86, 245, 0.3);
@@ -219,9 +219,9 @@ p {
 
 
 
-.header.transparent .logo img {
+/* .header.transparent .logo img {
     filter: brightness(0) invert(1);
-}
+} */
 
 
 .header-content {
@@ -231,7 +231,7 @@ p {
 }
 
 .logo img {
-    height: 40px;
+    height: 60px;
     width: auto;
 }
 
@@ -507,6 +507,7 @@ p {
 .hospital-img {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .hospital-img >div {
@@ -515,13 +516,13 @@ p {
 }
 
 .hospital-img img {
-    border-radius: 50px 50px 10px 10px;
+    border-radius: 10px;
     width: 100%;
     max-width: 170px;
     min-width: 170px;
     max-height: 160px;
     min-height: 160px;
-    margin: 10px 20px 5px;
+    margin: 10px 20px;
 }
 
 
@@ -647,7 +648,7 @@ p {
     width: 50%;
 }
 
-.buttons button {
+.buttons a {
     margin: 0px 15px 0px 0px;
 }
 
@@ -800,7 +801,28 @@ p {
 .nav-link-m {
     color: var(--dark-gray) !important;
 }
+#mini-about {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+}
 
+.about-img{
+    display: flex;
+    width: 40%;
+    justify-content: center;
+}
+
+.about-img img {
+    width: 100%;
+    border-radius: var(--radius-xl);
+    height: 730px;
+}
+
+.about-info {
+    width: 55%;
+    padding: 0px 10px;
+}
 /* Responsive Design */
 @media (max-width: 1024px) {
     .hero-content {
@@ -904,7 +926,24 @@ p {
     #mini-about{
         width: 100% !important;
         display: flex;
-        flex-direction: column;
+        flex-direction: column !important;
+    }
+
+    .about-img{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .about-img img {
+        width: 100%;
+        border-radius: var(--radius-xl);
+        height: auto;
+    }
+
+    .about-info {
+        width: 100%;
+        padding: 0px 10px;
     }
 
     .mini-booking {
@@ -935,7 +974,7 @@ p {
     }
 
 
-    .buttons button {
+    .buttons a {
         width: 100%;
         margin: 10px 0px;
     }
@@ -1002,3 +1041,4 @@ p {
         transform: rotate(360deg);
     }
 }
+

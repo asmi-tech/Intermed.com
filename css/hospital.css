@@ -63,7 +63,7 @@
 
 .hospital-featured-image {
     width: 100%;
-    height: 400px;
+    height: 600px;
     object-fit: cover;
     border-radius: var(--radius-xl);
 }
@@ -125,7 +125,17 @@
     display: none;
 }
 
+#mini-services-h{
+    background-image: linear-gradient(to right bottom, #050537, #0b1362, #261a90, #481cbe, #7012eb); 
+    border-radius: 3% 3% 10% 10%;
+    margin-bottom: 250px;
+}
+
 @media (max-width: 768px) {
+    #mini-services-h {
+        background-image: linear-gradient(to right bottom, #050537, #0b1362, #261a90, #481cbe, #7012eb);
+        border-radius: 15px 15px 20% 20%;
+    }
     .hospital-info-grid {
         grid-template-columns: 1fr;
     }
