@@ -168,6 +168,7 @@
             padding: var(--spacing-2xl);
             box-shadow: var(--shadow-lg);
             margin-bottom: var(--spacing-xl);
+            width: 100%;
         }
         
         .sidebar-card h3 {
@@ -178,7 +179,9 @@
         .contact-form-section {
             background: var(--off-white);
         }
-        
+        .side-bar {
+            width: 100%;
+        }
         @media (max-width: 768px) {
             #doctor-about-card-id{
                 display: flex;
@@ -186,6 +189,12 @@
                 align-items: center;
                 width: 100% !important;
                 margin-top: -20px;
+            }
+
+            .sidebar-card iframe {
+                width: 100%;
+                height: 300px;
+                border-radius: 20px;
             }
 
             .card-shape img {
@@ -224,5 +233,11 @@
 
             .doctor-avatar img {
                 border-radius: 50%;
+            }
+
+            .sidebar-card {
+                display: flex;
+                flex-direction: column;
+                width: 100% !important;
             }
         }
