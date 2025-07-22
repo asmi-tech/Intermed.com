@@ -86,6 +86,53 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+.days-info{
+    padding: 10px 5px;
+    color: white;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-around;
+    animation: scrollLeft 40s linear infinite;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.days {
+    flex: 0 0 auto;
+     margin: 0px 10px;
+}
+
+   .days-wrapper {
+            background-color: #4643E8;  
+            width: 100%;
+            overflow: hidden;
+        }
+
+        @keyframes scrollLeft {
+            0% {
+                transform: translateX(50%);
+            }
+            100% {
+                transform: translateX(-200%);
+            }
+        }
+
+@media (max-width: 768px) {
+   .days-info{
+        animation: scrollLeft 15s linear infinite;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        flex-direction: row;
+   }
+
+   .days {
+      flex: 0 0 auto;
+      margin: 0px 10px;
+      width: 100% !important;
+   }
+    
+}
 /* Layout Classes */
 .container {
     max-width: 1400px;
