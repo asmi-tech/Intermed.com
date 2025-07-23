@@ -75,6 +75,8 @@ html {
     scroll-behavior: smooth;
 }
 
+
+
 body {
     font-family: "Winky Rough", sans-serif;
     font-style: normal;
@@ -95,7 +97,6 @@ body {
     animation: scrollLeft 40s linear infinite;
     flex-wrap: nowrap;
     width: 100%;
-    font-family:;
 }
 
 .days {
@@ -466,7 +467,7 @@ p {
 .card {
     background: var(--white);
     border-radius: var(--radius-xl);
-    padding: var(--spacing-2xl);
+    padding: var(--spacing-xl);
     box-shadow: var(--shadow-md);
     transition: all 0.3s ease;
     border: 2px solid rgba(255, 255, 255, 0.1);
