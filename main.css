@@ -77,7 +77,7 @@ html {
 
 
 body {
-    font-family: "Winky Rough", sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     font-style: normal;
     font-size: var(--font-size-base);
     line-height: 1.6;
@@ -285,8 +285,7 @@ p {
 }
 
 .logo img {
-    height: 60px;
-    width: auto;
+    height: 65px;
     border-radius: 20px;
     margin-right: 10px;
 }
@@ -906,9 +905,6 @@ p {
 @media (max-width: 768px) {
     .logo img {
         border-radius: 10px;
-        /* height: 80px; */
-        width: 100%;
-    
     }
     .nav {
         display: none;
