@@ -904,7 +904,7 @@ p {
 @media (max-width: 768px) {
     .logo img {
         border-radius: 10px;
-        height: 80px;
+        /* height: 80px; */
         width: 100%;
     
     }
