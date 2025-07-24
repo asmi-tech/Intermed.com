@@ -77,6 +77,8 @@
             justify-content: space-between;
             justify-items: center;
             flex-direction: row;
+            width: 100%;
+
         }
 
         .doctor-title {
@@ -87,33 +89,27 @@
         }
 
         #call-icon {
-            width: 40px ;
-            height: 40px;
-            border-radius: 50%;
             display: flex;
             justify-items: center;
-            justify-content: center;
+            justify-content: space-between;
             color: #3d65ff;
             border: 1px solid #3d65ff;
+            padding: 5px 10px;
+            border-radius: 10px;
+            width: 100%;
         }
 
-        #call-icon:hover {
-            background-color: #3d65ff;
-            color: white;
-        }
+    
 
         #call-icon i{
-            display: flex;
-            justify-content: center;
-            margin-top: 10px;
+            margin-top: 5px;
         }
 
        
         .doctor-specialty {
             color: white;
             font-weight: 500;
-            padding: 5px 30px 20px 5px !important;
-            width: 70%;
+            padding:5px 20px !important;
             height: 40px;
             text-align: center;
             border-radius: 20px;
@@ -189,6 +185,19 @@
                 align-items: center;
                 width: 100% !important;
                 margin-top: -20px;
+            }
+
+            .doctor-details{
+                flex-direction: column;
+                justify-content: left;
+                align-items: center;
+                width: 100%;
+                margin-bottom: 10px;
+            }
+
+            .doctor-specialty {
+                justify-content: left;
+                margin: 10px 0px;
             }
 
             .sidebar-card iframe {
