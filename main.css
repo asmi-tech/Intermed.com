@@ -97,6 +97,7 @@ body {
     animation: scrollLeft 40s linear infinite;
     flex-wrap: nowrap;
     width: 100%;
+    letter-spacing: 1.1px;
 }
 
 .days {
@@ -112,6 +113,7 @@ body {
             background-color: #3d65ff;  
             width: 100%;
             overflow: hidden;
+            box-shadow: 0px 10px 30px rgba(88, 86, 245, 0.3);
         }
 
         @keyframes scrollLeft {
@@ -264,9 +266,8 @@ p {
 /* Header */
 .header {
     background-color: #3d65ff !important;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0px 2px 10px rgba(255, 255, 255, 0.1);
-    padding: var(--spacing-md) 0;
+    padding: 10px 0px;
     z-index: 1000;
 }
 
@@ -279,12 +280,13 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 }
 
 .logo img {
-    height: 40px;
+    height: 60px;
     width: auto;
-    
+    border-radius: 20px;
 }
 
 .nav {
@@ -294,14 +296,14 @@ p {
 }
 
 .nav-link {
-    color: var(--dark-gray);
+    color: black !important;
     text-decoration: none;
     font-weight: 500;
     transition: all 0.4s ease, filter 0.4s ease;
 }
 
 .nav-link:hover {
-    color: #13182f !important;
+    color: #0cb9f1 !important;
     transform: translateX(5px) rotateY(5deg) translatey(5px) scale(1.01);
 }
 
@@ -338,15 +340,13 @@ p {
     display: flex;
     align-items: center;
     background-color: #3d65ff;
-   color: #00ffff;
-
-
     letter-spacing: 1.2px;
     position: relative;
     border-bottom-left-radius: 100px;
     border-bottom-right-radius: 100px;
     font-style: normal;
     overflow: hidden;
+    box-shadow: 0px 10px 30px rgba(88, 86, 245, 0.3);
 }
 
 
@@ -398,7 +398,7 @@ p {
 }
 
 .hero-text p {
-    color: #00ffff;
+    color:rgb(24, 23, 23);
     font-size: var(--font-size-lg);
     margin-bottom: 10px;
    font-weight: 700;
@@ -409,11 +409,11 @@ p {
 }
 
 .hero-image img {
-    width: 85%;
+    width: 80%;
     height: auto;
     border-radius: 800px 800px 40px 40px;
     box-shadow: var(--shadow-xl);
-    margin: 50px 0px 0px 50px;
+    margin: 10px 0px 0px 30px;
     transition: transform 0.4s ease, filter 0.4s ease;
     z-index: 100;
 }
@@ -821,9 +821,9 @@ p {
     background: none;
     border: none;
     font-size: 2rem;
-    border: 1px solid var(--dark-gray);
+    border: 1px solid white;
     cursor: pointer;
-    color: var(--dark-gray);
+    color: white;
     padding: 5px;
     border-radius: 10px;
 }
@@ -903,8 +903,9 @@ p {
 
 @media (max-width: 768px) {
     .logo img {
-        height: 70px;
-        width: auto;
+        border-radius: 10px;
+        height: 80px;
+        width: 100%;
     
     }
     .nav {
