@@ -410,7 +410,7 @@ p {
 }
 
 .hero-image img {
-    width: 80%;
+    width: 65%;
     height: auto;
     border-radius: 800px 800px 40px 40px;
     box-shadow: var(--shadow-xl);
